@@ -1,0 +1,5 @@
+stud123,234,10937767,Tan Ah Kow,86277652,TanAhKow@gmail.com
+stud234,234,10958867,tantantan,86950032,tan@gmail.com
+stud456,456,19449385,dan,84992856,dan@gmail.com
+shafuckyou,12345,15915915,shafiqshafiqshafiq,98765421,test@tis.com
+shafiqsux,shafiqsux,12345678,Shafiq Smol Bin Sux,97347159,shafiqsux@isuck.com

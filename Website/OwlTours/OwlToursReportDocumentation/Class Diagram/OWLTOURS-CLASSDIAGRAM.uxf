@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;AboutPage&gt;&gt;
+--
+#Page_Load()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>117</x>
+      <y>198</y>
+      <w>216</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inbox&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#GridView2_SelectedIndexChanged()
+#send_Click()
+#rec_Click()
+#reply_Click()
+#delete_Click()
+#sendMsg_reply_Click()
+#sendMsg_New_Click()
+#BtnSearch_Click()
+#grdView1_PageIndexChanging()
+#grdView2_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;HomePage&gt;&gt;
+--
+#Page_Load()
+#getIsAdmin()
+#getIsGuide()
+#getIsTourist()
+#getIsSuspended()
+#getFname()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;CreateTour&gt;&gt;
+--
+#Page_Load()
+#SubmitTour_Click()
+#Cancel_cTour_Click()
+#T_Calendar_SelectionChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;EditProfile&gt;&gt;
+--
+#Page_Load()
+#EditProf_Submit_Click()
++UpdateProf()
+#EditBack_Click()
+#updateRole_TextChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>198</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Login&gt;&gt;
+--
+#Page_Load()
+#Login_Click()
+#TextBox1_TextChanged()
+#Register_Click()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>207</y>
+      <w>153</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ProfilePage&gt;&gt;
+--
+#Page_Load()
+#ProfileBack_btn_Click()
+#EditProfile_btn_Click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>207</y>
+      <w>252</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;RegisterPage&gt;&gt;
+--
++IsValidEmail()
+#Page_Load()
+-LoadMonths()
+-LoadYears()
+#Register_Cancel_Click()
+#Register_Submit_Click()
+#DobCalendar_SelectionChange()
+#DropDownList1_SelectedIndexChanged()
+#DropDownList2_SelectedIndexChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>414</y>
+      <w>234</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;SearchProfile&gt;&gt;
+--
+#Page_Load()
+#GrideView1_SelectedIndexChanged()
+#susAcct_Click()
+#unSusAcct_Click()
+#BtnSearch_Click()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>963</x>
+      <y>0</y>
+      <w>189</w>
+      <h>603</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Tours&gt;&gt;
+--
+#Page_Load()
+-TourName:string
+-Tourdate:string
+-Tourarea:string
+-Tourlocation:string
+-particount:int
+-tourdesc:string
+-userID:int
+-isTourGuide:string
+-isTourist:string
+-TourGuideName:string
+-isjoined:string
++setTourName(string)
++setTourdate(string)
++setTourArea(string)
++setTourLocation(string)
++setPartiCount(int)
++setDesc(string)
++setUserId(int)
++setIsTourGuide()
++setIsTourist()
++setTourGuideName(string)
++setIsJoined()
++getTourName(string)
++getTourdate(string)
++getTourArea(string)
++getTourLocation(string)
++getPartiCount(int)
++getDesc(string)
++getUserId(int)
++getisTourGuide()
++getisTourist()
++getTourGuideName(string)
++getisjoined()
++insertTour()
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>0</y>
+      <w>234</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewAllTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#Join_Button_Click()
+#BtnSearch_Click()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>126</y>
+      <w>234</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewBookedTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#cancelTour_Click()
+#GridView2_SelectedIndexChanged()
+#Rate_Button_Click()
++UpdateRating()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>270</y>
+      <w>261</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewCreatedTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#TU_Cancel_Click()
+#TU_Update_Click()
++UpdateTour()
+#uTour_Cal_SelectionChanged()
+#GridView2_SelectedIndexChanged()
+#tourTimeFrame_SelectedIndexChanged()
+#grdView1_PageIndexChanging()
+#grdView2_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

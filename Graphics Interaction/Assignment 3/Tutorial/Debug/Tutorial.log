@@ -1,0 +1,5 @@
+﻿D:\Windows Applications\Visual Studio\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Tutorial.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\School\Assignments\@ Graphics Interaction @\Assignment 3\Debug\vc120.pdb'; linking object as if no debug info
+  Tutorial.vcxproj -> D:\School\Assignments\@ Graphics Interaction @\Assignment 3\Debug\Assignment 3.exe

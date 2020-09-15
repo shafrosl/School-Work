@@ -1,0 +1,23 @@
+CONTROLS
+V - Able too change between perspective view and multiple views
+
+W - move camera forward
+S - move camera backwards
+A - move camera left
+D - move camera right
+
+Right Click and Drag to rotate camera only for view 4 (bottom right corner) and in perspective view
+
+Esc - exit
+
+Able to:
+- view wireframe
+- toggle disco mode
+- reset items back into primary position
+- switch lights on/off
+- change ambient/specular/diffusion/attenuation of lights
+- randomize colour of items on reload of program (exit and reopen program)
+
+work done by:
+Mohamed Shafiq Bin Roslan
+6098253

@@ -1,0 +1,5 @@
+﻿  Task3.cpp
+d:\school\assignments\@@@ gpu @@@\assignment_3\assignment_3_p3\assignment_3_p3\task3.cpp(32): warning C4101: 'e': unreferenced local variable
+d:\school\assignments\@@@ gpu @@@\assignment_3\assignment_3_p3\assignment_3_p3\task3.cpp(213): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@@@ gpu @@@\assignment_3\assignment_3_p3\assignment_3_p3\task3.cpp(215): warning C4101: 'e': unreferenced local variable
+  Assignment_3_P3.vcxproj -> D:\School\Assignments\@@@ GPU @@@\Assignment_3\Assignment_3_P3\Debug\Assignment_3_P3.exe

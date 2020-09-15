@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>REEFiC Protocol</title>
+
+  <meta name="description" content="XAMPP is an easy to install Apache distribution containing MariaDB, PHP and Perl." />
+  <meta name="keywords" content="xampp, apache, php, perl, mariadb, open source distribution" />
+
+  <link href="/dashboard/images/favicon.png" rel="icon" type="image/png" />
+
+  <link href="/test/stylesheets/style.css" rel="stylesheet">
+  <link href="/test/stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="/test/stylesheets/font-awesome.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <script src="/dashboard/javascripts/modernizr.js" type="text/javascript"></script>
+</head>
+
+<body class="index">
+  <div class='headerwave'>
+    <div class="row w-100 m-0">
+      <div class="col">
+        <div class="container p-3">
+          <nav class="navbar navbar-expand-lg navbar-light bg-home">
+            <a class="navbar-brand text-white" href="/test"><h2><b>REEFiC</b><br></span>PROTOCOL</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="btn text-white" href="#product">PRODUCT</a>
+                <a class="btn text-white" href="#token-sale">TOKEN SALE</a>
+                <a class="btn text-white" href="#team">TEAM</a>
+                <a class="btn text-white" href="#">FAQ</a>
+                <a class="btn text-white" href="#contact">CONTACT</a>
+                <a class="btn text-white btn-outline-light" href="#">WHITEPAPER</a>
+                <a class="btn text-white" href="#">SIGN IN</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">EN</a>
+                    <a class="dropdown-item" href="#">ML</a>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div id='intro' class="p-5">
+          <h2 class="text-white text-center text-responsive"><b>HAVE A REEFIC DAY!</b></h2>
+          <p class="container text-center text-white p-3 px-4">
+            Reefic Protocol is a decentralised platform where customers can exchange reward points across multiple
+            loyalty programs and selected cryptocurrencies.
+          </p>
+          <h1 class="text-center text-white"><b>OPEN FOR TOKEN SALE IN</b></h1>
+          <div id='header-timer' class='container text-center w-30 p-3'>
+            <div class='row p-3'>
+              <div class='col-3'>
+                <div class='text-uppercase text-center d-inline-block text-white'>
+                  <h1 class='d-block text-center display-4' id="days"></h1>Days
+                </div>
+              </div>
+              <div class='col-3'>
+                <div class='text-uppercase text-center d-inline-block text-white'>
+                  <h1 class='d-block text-center display-4' id="hours"></h1>Hours
+                </div>
+              </div>
+              <div class='col-3'>
+                <div class='text-uppercase text-center d-inline-block text-white'>
+                  <h1 class='d-block text-center display-4' id="minutes"></h1>Minutes
+                </div>
+              </div>
+              <div class='col-3'>
+                <div class='text-uppercase text-center d-inline-block text-white'>
+                  <h1 class='d-block text-center display-4' id="seconds"></h1>Seconds
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-green btn-sm mt-3" type='button'>WHITELIST</button>
+            <button class="btn btn-green btn-sm mt-3" type='button'>BOUNTY</button>
+          </div>
+        </div>
+    </div>
+    <br>
+  </div>
+
+  <div class='greenwave'>
+    <svg viewBox="0 15 500 40" preserveAspectRatio="xMinYMin meet">
+      <path d="M0,50 C50,50 350,0 500,25 L500,00 L0,0 Z" style="stroke: none; fill:#9A799C;"></path>
+    </svg>
+  </div>
+
+  <div id="product" >
+    <div class='greenwave'>
+      <div class="row w-100 m-0">
+        <div class="col">
+          <h3 class="text-center text-purple"><b>REEFIC PROTOCOL EXPLAINED</b></h3>
+          <div class='container p-2 p-2'>
+             <div class="embed-responsive embed-responsive-16by9 youtube">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VdPgJ0ZN8eU"></iframe>
+             </div>
+          </div>
+          <div class='container text-center p-3'>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/twitter.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/telegram.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/facebook.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/git.png"></img>
+            </a>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-purple btn-sm mt-3" type='button'>WHITEPAPER</button>
+            <button class="btn btn-purple btn-sm mt-3" type='button'>ONE PAGER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='whitewave'>
+      <svg viewBox="0 50 500 60" preserveAspectRatio="xMinYMin meet">
+        <path d="M0,60 C200,150 300,0 700,100 L500,0 L0,0 Z" style="stroke: none; fill:#52ACAD;"></path>
+      </svg>
+    </div>
+
+    <div class="whitewave row w-100 m-0">
+      <div class="col pb-3">
+        <h3 class='container text-center text-purple'><b>REEFIC PRESS RELEASES</b></h3>
+
+        <!--Carousel Wrapper-->
+        <div id="carousel-press" class="container carousel slide carousel-multi-item v-2 p-5" data-ride="carousel">
+          <!--Slides-->
+          <div class="carousel-inner v-2" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top pt-3" src="./img/blockchain-logo.png" alt="Card image cap" height='50%'>
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text text-center">4th September 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top pt-3" src="./img/blockchain-logo.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text  text-center">4th September 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top pt-3" src="./img/blockchain-logo.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text text-center">4th September 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top pt-3" src="./img/blockchain-logo.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text text-center">4th September 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel-press" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-press" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+        
+        <div class='text-center'>
+          <button class="btn btn-purple btn-sm" type='button'>MORE RELEASES</button>
+        </div>
+      </div>
+    </div>
+   
+    <div class='graywave'>
+      <svg viewBox="0 35 500 55" preserveAspectRatio="xMinYMin meet">
+        <path d="M0,75 C150,100 300,-10 500,70 L500,00 L0,0 Z" style="stroke: none; fill:white;"></path>
+      </svg>
+    </div>
+
+    <div class='graywave row w-100 m-0'>
+      <div class="col pb-3">
+        <h3 class='text-center text-purple'><b>REEFIC PROTOCOL UPDATES</b></h3>
+        <h6 class='text-center text-purple'>Stay up-to-date with the current news</h6>
+
+        <div class='container text-center p-5'>
+          <div class="row w-100 m-0">
+            <div class="col-md-12">
+              <div id="mdb-lightbox-ui"></div>
+              <div class="mdb-lightbox">
+                <figure class="col-md-2 stay-up-to-date-img">
+                  <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
+                    class="img-fluid">
+                  <h6 class="text-left my-3 h6-up-to-date">SOME NEW INFO ABOUT STUFF</h6>
+                  <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
+                    data-size="1600x1067">
+                    <p class='text-left font-weight-lighter text-muted small'>[+] READ MORE</p>
+                  </a>
+                </figure>
+                <figure class="col-md-2 stay-up-to-date-img">
+                  <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
+                    class="img-fluid" />
+                  <h6 class="text-left my-3 h6-up-to-date">SOME NEW INFO ABOUT STUFF</h6>
+                  <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(96).jpg"
+                    data-size="1600x1067">
+                    <p class='text-left font-weight-lighter text-muted small'>[+] READ MORE</p>
+                  </a>
+                </figure>
+          
+                <figure class="col-md-2 stay-up-to-date-img">
+                  <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(104).jpg"
+                    class="img-fluid" />
+                  <h6 class="text-left my-3 h6-up-to-date">SOME NEW INFO ABOUT STUFF</h6>
+                  <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(104).jpg"
+                    data-size="1600x1067">
+                    <p class='text-left font-weight-lighter text-muted small'>[+] READ MORE</p>
+                  </a>
+                </figure>
+          
+                <figure class="col-md-2 stay-up-to-date-img">
+                  <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg"
+                    class="img-fluid" />
+                  <h6 class="text-left my-3 h6-up-to-date">SOME NEW INFO ABOUT STUFF</h6>
+                  <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(45).jpg"
+                    data-size="1600x1067"><p class='text-left font-weight-lighter text-muted small'>[+] READ MORE</p>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class='text-center'>
+          <button class="btn btn-purple btn-sm" type='button'>MORE EVENTS</button>
+        </div>
+      </div>
+    </div>
+
+    <div class='whitewave'>
+      <svg viewBox="20 50 400 50" preserveAspectRatio="xMinYMin meet">
+        <path d="M0,50 C120,150 400,-44 500,116 L500,0 L0,0 Z" style="stroke: none; fill:#DCDCDC;"></path>
+      </svg>
+    </div>
+
+    <div class="whitewave pb-5">
+      <div class='container'>
+        <div class='row w-100 m-0 pb-3'>
+          <div class="col-md-5">
+            <h3 class='text-left text-purple'><b>CREATING A SECURE AND INTERLINKED ECO-SYSTEM FOR CUSTOMER LOYALTY AND ENGAGEMENT</b></h3>
+            <p class='text-left pt-3'>Reefic Protocol is an integrated exchange habitat that links customers, merchants and
+              solution providers together.</p>
+          </div>
+          <div class="col-md-7 text-center py-4">
+            <img alt="picture" src="img/benefits.png" class="img-fluid-2"/>
+          </div>
+          <div class="col-md-7">
+            <div class='text-left'>
+              <button class="btn btn-purple btn-sm mt-3" type='button'>REGISTER NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='whitewave' id='token-sale'>
+      <div class='tokengenbg pb-5'>
+        <div class="row w-100 m-0 mb-5 pb-5">
+          <div class="col container text-center">
+            <h1 class='text-center text-purple'><b>TOKEN GENERATION EVENT</b></h1>
+            <div id='token-timer' class='container text-center w-30 p-3'>
+              <div class='row p-3'>
+                <div class='col-3'>
+                  <div class='text-uppercase text-center d-inline-block text-purple'>
+                    <h1 class='d-block text-center display-4' id="days-t"></h1>Days
+                  </div>
+                </div>
+                <div class='col-3'>
+                  <div class='text-uppercase text-center d-inline-block text-purple'>
+                    <h1 class='d-block text-center display-4' id="hours-t"></h1>Hours
+                  </div>
+                </div>
+                <div class='col-3'>
+                  <div class='text-uppercase text-center d-inline-block text-purple'>
+                    <h1 class='d-block text-center display-4' id="minutes-t"></h1>Minutes
+                  </div>
+                </div>
+                <div class='col-3'>
+                  <div class='text-uppercase text-center d-inline-block text-purple'>
+                    <h1 class='d-block text-center display-4' id="seconds-t"></h1>Seconds
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class='text-center text-muted' style='font-weight: 500;'>To achieve its platform vision, Reefic Protocol is
+              looking to the<br>cryptocurrency community to support this movement</p>
+      
+            <div id='table-container' class='container w-40 pt-3'>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Total Token Supply</td>
+                    <td class='text-right'>300,000,000 RFT</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>RFT Token Sale Supply</td>
+                    <td class='text-right'>150,000,000 RFT</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Token Sale Price</td>
+                    <td class='text-right'>1 ETH = 6,000 RFT</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Soft Cap</td>
+                    <td class='text-right'>USD 2,000,000</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Hard Cap</td>
+                    <td class='text-right'>25,000 ETH</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Token Format</td>
+                    <td class='text-right'>ERC-20 Standard</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Currency Adopted</td>
+                    <td class='text-right'>ETH</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Minimum Contribution</td>
+                    <td class='text-right'>0.16 ETH or 1,000 RFT</td>
+                  </tr>
+                  <tr>
+                    <td class='text-left' style='font-weight: 500;'>Individual Cap Enhanced KYC</td>
+                    <td class='text-right'>16 ETH or 100,000 RFT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      
+            <div id='card-sale-container' class='container w-40 py-4'>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <h5 class="card-title card-header card-sale-h5">PRE SALE</h5>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>3 July 2018</b><br>10 Days</p>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>30% Bonus</b><br>Soft Cap<br>$2M</p>
+                    <p class="card-text card-footer p-0">&emsp;</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <h5 class="card-title card-header card-sale-h5">SALE STAGE 1</h5>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>15 August 2018</b><br>15 Days</p>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>20% Bonus</b><br>Hard Cap<br>25K ETH</p>
+                    <p class="card-text card-footer p-0">&emsp;</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <h5 class="card-title card-header card-sale-h5">SALE STAGE 2</h5>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>28 October 2018</b><br>10 Days</p>
+                    <p class="card-text card-content card-sale-content m-0 p-2"><b>20% Bonus</b><br>Hard Cap<br>$5M</p>
+                    <p class="card-text card-footer p-0"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class='container'>
+              <div class='row text-center'>
+                <div class='col'>
+                  <h6 class='text-center text-purple'><b>Don't miss your chance to get more Reefic tokens!</b></h6>
+                </div>
+              </div>
+              <div class='row text-center'>
+                <div class='col'>
+                  <button class="btn btn-purple btn-sm mt-3" type='button'>REGISTER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class='container'>
+              <div id='sale-row-chart' class='row'>
+                <div class="col-6 p-3">
+                  <h3 class='text-purple'><b>TOKEN ALLOCATION</b></h3>
+                  <img alt="picture" src="img/token-allocation chart.png" class="img-fluid-2" />
+                </div>
+                <div class="col-6 p-3">
+                  <h3 class='text-purple'><b>USE OF PROCEEDS</b></h3>
+                  <img alt="picture" src="img/use-of proceeds chart.png" class="img-fluid-2" />
+                </div>
+              </div>
+            </div>
+            <h1 id='opportunity-header' class='text-center text-purple py-4'><b>DON'T MISS THE OPPORTUNITY!</b></h1>
+            <div class='text-center mb-5 pb-5'>
+              <button class="btn btn-purple btn-sm" type='button'>REGISTER NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class='roadmapbg'>
+        <div class="row w-100 m-0">
+          <div id='roadmapbg-container' class="col container my-5 py-5">
+            <h3 class='text-center text-purple pt-5 mt-5'><b>IMPLEMENTATION ROADMAP</b></h3>
+            <div id='roadmapbg-container-parent' class='container py-5'>
+              <div id='roadmapbg-container-pad-mar' class='row mx-5 px-5'>
+                <div class='col'>
+                  <div id='roadmap1' class="step">
+                    <div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <div class="card border-0">
+                        <div class="card-body bg-gray">
+                          <div class='row'>
+                            <div class='text-center pl-3 pr-3'>
+                              <h2><b>Q4</b></h2>
+                              <h6><b>2018</b></h6>
+                            </div>
+                            <div class='col'>
+                              <p class="card-text small minimize line-break">Assemble the business team for Reefic Protocol. Basic Reefic Protocol API for merchants and solution providers to integrate.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id='roadmap2' class="step step-active">
+                    <div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <div class="card border-0">
+                        <div class="card-body bg-gray">
+                          <div class='row'>
+                            <div class='text-center pl-3 pr-3'>
+                              <h2><b>Q1</b></h2>
+                              <h6><b>2019</b></h6>
+                            </div>
+                            <div class='col'>
+                              <p class="card-text small minimize line-break">Pilot of exchange platform in collaboration with certified customer apps with selected partners in Singapore, Malaysia, Philippines, Australia.
+                                <br><br>
+                                Attains 300 strong merchant sign up through solution providers and other partnerships.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id='roadmap3' class="step">
+                    <div>
+                      <div class="circle"></div>
+                    </div>
+                    <div>
+                      <div class="card border-0">
+                        <div class="card-body bg-gray">
+                          <div class='row'>
+                            <div class='text-center pl-3 pr-3'>
+                              <h2><b>Q2</b></h2>
+                              <h6><b>2019</b></h6>
+                            </div>
+                            <div class='col'>
+                              <p class="card-text small minimize line-break">Launch of Reefic App for iOS and Android for customers to download and exchange their reward points.
+                                <br><br>
+                                Launch of Reefic Bicameral Governing Body to validate newly created blocks based on Bicameral Governing Strategy, and to
+                                audit already validated blocks. Expansion into Taiwan and Hong Kong through strategic partnerships. Launch of Reefic Bicameral Governing Body to validate newly created blocks based on Bicameral Governing Strategy, and to audit already
+                                validated blocks.
+                                <br><br>
+                                Expansion into Taiwan and Hong Kong through strategic partnerships.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div id='roadmapbg-buttons' class='text-center mb-5 pb-5'>
+              <button class="btn btn-purple btn-sm mt-3" type='button'>WHITEPAPER</button>
+              <button class="btn btn-purple btn-sm mt-3" type='button'>ONE PAGER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id='team' class='meetcastbg'>
+      <div class="row w-100 m-0">
+        <div class="col">
+          <h2 class='text-center text-purple'><b>MEET THE CAST</b></h2>
+          <h5 class='text-center text-purple p-3'><b>DEVELOPMENT TEAM</b></h5>
+          <div class='container pt-5 pb-3'>
+            <div class="row text-center">
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='nats' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/cable.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Nathan Summers</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='nats-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Nathan Summers<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='mattm' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/dared.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Matthew Murdoch</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='mattm-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Matthew Murdoch<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='chrisp' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/darkhawk.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Christopher Powell</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='chrisp-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Christopher Powell<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='remyelb' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/gambit.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Remy LeBeau</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='remyelb-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Remy Etienne LeBeau<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='gwens' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/gwenp.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Gwen Stacy</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='gwens-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Gwen Stacy<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='danr' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/ironf.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Danny Rand</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='danr-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Danny Rand<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='tonys' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/ironman.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Tony Stark</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='tonys-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Tony Stark<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='jeang' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/jeang.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Jean Grey</h6>
+                      <p class='text-center text-muted'>Lead</p>
+                    </div>
+                  
+                    <div id='jeang-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Jean Grey<br>Lead</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h5 class='text-center text-purple'><b>ADVISORS</b></h5>
+          <div class='container pt-5 pb-5'>
+            <div class="row text-center">
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='marcs' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/moonk.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Marc Spector</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='marcs-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Marc Spector<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='kamk' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/msmarv.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Kamala Khan</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='kamk-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Kamala Khan<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='jamesh' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/omlogan.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">James Howlett</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='jamesh-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">James Howlett<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='peteq' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/peterq.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Peter Quill</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='peteq-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Peter Quill<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='francc' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/punish.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Francis Castle</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='francc-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Francis Castle<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='tedr' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/redhulk.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Thaddeus Ross</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='tedr-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Thaddeus Ross<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <div class='row'>
+                  <figure class="col-6 pb-2">
+                    <div id='annm' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/rogue.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Anna Marie</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='annm-info' class="name-card border-0 text-left pointer" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Anna Marie<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                  
+                  <figure class="col-6 pb-2">
+                    <div id='petep' onclick="showNameCard(this)">
+                      <img alt="picture" src="./img/headshots/spiderman.jpg" class="img-fluid headshot pointer">
+                      <h6 class="text-center mt-3 mb-0">Peter Parker</h6>
+                      <p class='text-center text-muted'>Company</p>
+                    </div>
+                  
+                    <div id='petep-info' class="name-card border-0 text-left pointer justify-content-center" onclick="showNameCard(this)">
+                      <p class="card-title card-header text-uppercase">Peter Parker<br>Advisor</p>
+                      <p class="card-title card-header m-0 p-3 small">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                        the
+                        Semantics, a large.</p>
+                      <p class="card-title card-footer-2 p-3">LinkedIn</p>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='whitewave' style='position: relative'>
+      <div class="row w-100 m-0">
+        <div class="col">
+          <h5 class='text-center text-purple pt-4'><b>PARTNERSHIPS</b></h5>
+      
+          <!--Carousel Wrapper-->
+          <div id="carousel-company" class="container carousel slide carousel-multi-item v-2 p-4" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner v-2" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/amarillo-logo.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/cow.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/turtle.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/flaser.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/beratex.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-2">
+                  <div class="card mb-2 border-0">
+                    <img class="card-img" src="./img/brown-bear.png" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-company" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-company" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+      </div>
+    </div>
+    
+    <div class='darkpurplewave'>
+      <div class="row w-100 m-0 pt-5 pb-3">
+        <div class="col container">
+          <h2 class='text-center text-white'><b>DON'T MISS THE OPPORTUNITY!</b></h2>
+          <div class="text-center pt-2 pb-2">
+            <button class="btn btn-green btn-md" type='button'>REGISTER NOW</button>
+          </div>
+          <div class='container text-center p-3'>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/twitter.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/telegram.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/facebook.png"></img>
+            </a>
+            <a class="btn fa">
+              <img width="35px" src="./img/icons/git.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id='contact' class='darkgraywave'>
+      <div class="row w-100 m-0 pt-5 pb-5">
+        <div class="col container">
+          <h3 class='text-center text-white'><b>GET IN TOUCH</b></h3>
+          <p class='text-center text-white'>Any questions? Reach out to us and we'll get back to you shortly.</p>
+          <div class='container text-center pb-4'>
+            <div class='row'>
+              <div class='col-sm-4 p-2'>
+                <img width="25px" src="./img/icons/phonegrey.png">
+                <span class='text-white pl-2'>+65-xxxx-xxxx</span></img>
+              </div>
+              <div class='col-sm-4 p-2'>
+                <img width="25px" src="./img/icons/emailgrey.png">
+                <span class='text-white pl-2'>enquiry@reefic.sg</span></img>
+              </div>
+              <div class='col-sm-4 p-2'>
+                <img width="25px" src="./img/icons/telegramgrey.png">
+                <span class='text-white pl-2'>join our telegram</span></img>
+              </div>
+            </div>
+          </div>
+
+          <form class='container w-40'>
+            <div class='row'>
+              <div class='col-sm-6'>
+                <input type="text" class="form-control" id="txtName" aria-describedby="Name" placeholder="Name">
+              </div>
+              <div class='col-sm-6'>
+                <input type="email" class="form-control" id="txtEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class='row pt-3 pb-3'>
+              <div class='col'>
+                <textarea class="form-control" id="txtMessage" placeholder="Write your message" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col-sm-6 text-left'>
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              </div>
+              <div id='form-btn' class='col-sm-6 text-right'>
+                <button class="btn btn-green btn-md" type='button'>SUBMIT NOW</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='whitewave'>
+    <div class="row w-100 m-0">
+      <div class="col container">
+        <div class='container'>
+          <div class='row'>
+            <div class='col'>
+              <nav class="nav align-bottom">
+                <a class="nav-link" href="/test">
+                  <h5 class='text-darkgray'><b>REEFiC</b><br>Protocol</h5>
+                </a>
+              </nav>
+            </div>
+          
+            <div class='col'>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class='text-darkgray text-right' href="#">PRIVACY POLICY</a>
+                </li>
+                <li class="nav-item">
+                  <a class='text-darkgray text-right' href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class='text-darkgray text-right' href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="mt-0">
+        </div>
+        <div>
+          <p class="text-center text-muted small">(c) 2018 REEFIC PTE LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    checkWidth();
+  });
+
+  $('#carousel-press.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
+  $('#carousel-company.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 6; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
+  const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+  let countDown = new Date("Dec 31, 2020 23:59:59").getTime(),
+    x = setInterval(function () {
+
+      let now = new Date().getTime(),
+        distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+      document.getElementById('days-t').innerText = Math.floor(distance / (day)),
+      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+      document.getElementById('hours-t').innerText = Math.floor((distance % (day)) / (hour)),
+      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+      document.getElementById('minutes-t').innerText = Math.floor((distance % (hour)) / (minute)),
+      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second),
+      document.getElementById('seconds-t').innerText = Math.floor((distance % (minute)) / second);
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "OFFER HAS EXPIRED";
+      }
+
+    }, second)
+
+    function checkWidth () {
+      if ($(window).width() < 646) {
+        var minimized_elements = $('p.minimize');
+
+        var i = 1;
+
+        minimized_elements.each(function () {
+          var t = $(this).text();
+          t = t.replace(/... READ MORE/g, "");
+          t = t.replace(/ READ LESS/g, "");
+
+          if ($(window).width() < 321) {
+            if (t.length < 20) return;
+
+            $(this).html(
+              t.slice(0, 20) + '<span>... </span><a href="#" id="more-' + i + '" class="more text-muted">READ MORE</a>' +
+              '<span style="display:none;">' + t.slice(20, t.length) + ' <a href="#" id="less-' + i + '" class="less text-muted"> READ LESS</a></span>'
+            );
+          }
+          else {
+            if (t.length < 100) return;
+
+            $(this).html(
+              t.slice(0, 100) + '<span>... </span><a href="#" id="more-' + i + '" class="more text-muted">READ MORE</a>' +
+              '<span style="display:none;">' + t.slice(100, t.length) + ' <a href="#" id="less-' + i + '" class="less text-muted"> READ LESS</a></span>'
+            );
+          }
+
+          i++;
+        });
+
+        $('#more-1', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).hide().prev().hide();
+          $(this).next().show();
+
+          $('#less-2').parent().hide().prev().show().prev().show();
+          $('#less-3').parent().hide().prev().show().prev().show();
+        });
+
+        $('#more-2', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).hide().prev().hide();
+          $(this).next().show();
+
+          $('#less-1').parent().hide().prev().show().prev().show();
+          $('#less-3').parent().hide().prev().show().prev().show();
+        });
+
+        $('#more-3', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).hide().prev().hide();
+          $(this).next().show();
+
+          $('#less-1').parent().hide().prev().show().prev().show();
+          $('#less-2').parent().hide().prev().show().prev().show();
+        });
+
+        $('#less-1', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).parent().hide().prev().show().prev().show();
+        });
+
+        $('#less-2', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).parent().hide().prev().show().prev().show();
+        });
+
+        $('#less-3', minimized_elements).click(function (event) {
+          event.preventDefault();
+          $(this).parent().hide().prev().show().prev().show();
+        });
+      }
+      else {
+        var minimized_elements = $('p.minimize');
+
+        minimized_elements.each(function () {
+          var t = $(this).text();
+          t = t.replace(/... READ MORE/g, "");
+          t = t.replace(/ READ LESS/g, "");
+          if (t.length < 100) return;
+
+          $(this).html(t);
+
+        });
+      }
+    }
+
+    $(window).resize(checkWidth);
+
+    function showNameCard(person) {
+      if (person.id.includes('-info')) {
+        var id = (person.id).replace("-info", "");
+        document.getElementById(id).style.display = 'block';
+        document.getElementById(person.id).style.display = 'none';
+      }
+      else {
+        document.getElementById(person.id).style.display = 'none';
+        document.getElementById(person.id + '-info').style.display = 'block';
+      }
+    }
+
+</script>

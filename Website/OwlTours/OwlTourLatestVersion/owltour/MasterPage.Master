@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="owltour.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!--Added Favicon Icon, TAB ICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="Images/android-chrome-192x192.ico" />
+    <title>Owl Tour</title>
+    <!--Original OWLTOUR css, remove comment to restore-->
+    <!--<link href="~/CSS/master.css" rel="stylesheet" type="text/css" runat="server"/>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <style>
+
+        /*New CSS, feel free to move it to masterpage.*/
+        header {
+                position: relative;
+                background-color: black;
+                height: 40vh;
+                min-height: 25rem;
+                width: 100%;
+                overflow: hidden;
+        }
+
+        header video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 0;
+                -ms-transform: translateX(-50%) translateY(-50%);
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+                position: relative;
+                z-index: 2;
+        }
+
+        header .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.5;
+                z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper" class="auto-style1">
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="Images/owlvid.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                        <div class="w-100 text-white">
+                            <h1 class="display-3">Owl Tours</h1>
+                            <p class="lead mb-0">We take you to places you don't want to go</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="messageSec">
+                <asp:ContentPlaceHolder ID="msg" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div id="mainPage">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <!--Top Navigation Bar-->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <!--Home Page-->
+                    <a class="navbar-brand" href="HomePage.aspx">Home</a>
+                    <!--Profile Page-->
+                    <a ID="profileLink" runat="server" class="navbar-brand" href="ProfilePage.aspx">Profile</a>
+                    <!--Inbox Page-->
+                    <a ID="inboxLink" runat="server" class="navbar-brand" href="Inbox.aspx">Inbox</a>
+                    <!--Tours Drop Down-->
+                    <div ID="dropDownTour" class="navbar-brand">Tours
+                        <button class="navbar-toggler navbar-toggler-right" type="button"></button>
+                        <div class="dropdown-content">
+                            <!--All Tours-->
+                            <a ID="viewAllLink" runat="server" class="navbar-brand" href="ViewAllTours.aspx">View All Tours</a>
+                            <!--Booked Tours-->
+                            <a ID="bookLink" runat="server" class="navbar-brand" href="ViewBookedTours.aspx">Booked Tours</a>
+                            <!--Created Tours-->
+                            <a ID="tourLink" runat="server" class="navbar-brand" href="ViewCreatedTours.aspx">Created Tours</a>
+                            <!--Create Tour-->
+                            <a ID="createLink" runat="server" class="navbar-brand" href="CreateTour.aspx">Create Tour</a>
+                        </div>
+                    </div>
+                    <!--Search Profile-->
+                    <a ID="searchLink" runat="server" class="navbar-brand" href="SearchProfile.aspx">Search Users</a>
+                    <!--About Page-->
+                    <a ID="aboutLink" runat="server" class="navbar-brand" href="AboutPage.aspx">About</a>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <!--Login-->
+                            <li class="nav-item">
+                                <asp:HyperLink ID="loginLink" CssClass="navbar-brand" NavigateUrl="~/Login.aspx" Text="Login" runat="server" />
+                            </li>
+                            <!--Register-->
+                            <li class="nav-item">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="registerLink" CssClass="navbar-brand" NavigateUrl="~/RegisterPage.aspx" Text="Register" runat="server" />
+                            </li>
+                            <!--Logout-->
+                            <li class="nav-item">
+                                <asp:LinkButton ID="logOut" CssClass="navbar-brand" runat="server" OnClick="LogOut_Click">Log Out</asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <footer class="py-5 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright &copy; Owl Tour 2019</p>
+                </div>
+                <!-- /.container -->
+            </footer>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </form>
+</body>
+</html>

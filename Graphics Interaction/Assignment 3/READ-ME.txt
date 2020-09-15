@@ -1,0 +1,22 @@
+CONTROLS
+0 - Program takes a screen capture and saves it into image file
+9 - takes the above screen capture and uses it as painting in the room
+
+W - move camera forward
+S - move camera backwards
+A - move camera left
+D - move camera right
+
+Right Click and Drag to rotate camera
+
+Esc - exit
+
+Able to:
+- change position of the light
+- change colour and reflectivity of Cube
+- change colour of glass partition
+- overall reflection of objects in the room
+
+work done by:
+Mohamed Shafiq Bin Roslan
+6098253

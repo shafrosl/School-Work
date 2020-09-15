@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>8</x>
+      <y>96</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;AboutPage&gt;&gt;
+--
+#Page_Load()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>552</y>
+      <w>192</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inbox&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#GridView2_SelectedIndexChanged()
+#send_Click()
+#rec_Click()
+#reply_Click()
+#delete_Click()
+#sendMsg_reply_Click()
+#sendMsg_New_Click()
+#BtnSearch_Click()
+#grdView1_PageIndexChanging()
+#grdView2_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>8</x>
+      <y>40</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;HomePage&gt;&gt;
+--
+#Page_Load()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>648</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;CreateTour&gt;&gt;
+--
+#Page_Load()
+#SubmitTour_Click()
+#Cancel_cTour_Click()
+#T_Calendar_SelectionChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>248</x>
+      <y>208</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Login&gt;&gt;
+--
+#Page_Load()
+#Login_Click()
+#TextBox1_TextChanged()
+#Register_Click()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>40</y>
+      <w>224</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;RegisterPage&gt;&gt;
+--
++IsValidEmail()
+#Page_Load()
+-LoadMonths()
+-LoadYears()
+#Register_Cancel_Click()
+#Register_Submit_Click()
+#DobCalendar_SelectionChange()
+#DropDownList1_SelectedIndexChanged()
+#DropDownList2_SelectedIndexChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>376</y>
+      <w>208</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;SearchProfile&gt;&gt;
+--
+#Page_Load()
+#GrideView1_SelectedIndexChanged()
+#susAcct_Click()
+#unSusAcct_Click()
+#BtnSearch_Click()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>480</y>
+      <w>168</w>
+      <h>536</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Tours&gt;&gt;
+--
+#Page_Load()
+-TourName:string
+-Tourdate:string
+-Tourarea:string
+-Tourlocation:string
+-particount:int
+-tourdesc:string
+-userID:int
+-isTourGuide:string
+-isTourist:string
+-TourGuideName:string
+-isjoined:string
++setTourName(string)
++setTourdate(string)
++setTourArea(string)
++setTourLocation(string)
++setPartiCount(int)
++setDesc(string)
++setUserId(int)
++setIsTourGuide()
++setIsTourist()
++setTourGuideName(string)
++setIsJoined()
++getTourName(string)
++getTourdate(string)
++getTourArea(string)
++getTourLocation(string)
++getPartiCount(int)
++getDesc(string)
++getUserId(int)
++getisTourGuide()
++getisTourist()
++getTourGuideName(string)
++getisjoined()
++insertTour()
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>528</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewAllTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#Join_Button_Click()
+#BtnSearch_Click()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1280</x>
+      <y>672</y>
+      <w>208</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewBookedTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#cancelTour_Click()
+#GridView2_SelectedIndexChanged()
+#Rate_Button_Click()
++UpdateRating()
+#grdView_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>832</y>
+      <w>232</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ViewCreatedTours&gt;&gt;
+--
+#Page_Load()
+#GridView1_SelectedIndexChanged()
+#TU_Cancel_Click()
+#TU_Update_Click()
++UpdateTour()
+#uTour_Cal_SelectionChanged()
+#GridView2_SelectedIndexChanged()
+#tourTimeFrame_SelectedIndexChanged()
+#grdView1_PageIndexChanging()
+#grdView2_PageIndexChanging()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>560</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+creates &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>712</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+view &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1312</x>
+      <y>0</y>
+      <w>168</w>
+      <h>536</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Bookings&gt;&gt;
+--
+-b_TourID int
+- b_TourName string
+-b_userID int
+-b_TourDate string
+-b_TourArea string
+-b_TourLocation string
+-b_currentparti int
+-b_partinum int
+-b_tourdesc string
+-b_TourGuideID int
+-b_TourGuideName string
+-bookername string
+-asTourist string
++setb_TourID(int)
++setb_TourName(string)
++setb_userID(int)
++setb_TourDate(string)
++setb_TourLocation(string)
++setb_currentparti(int)
++setb_partinum(int)
++setb_tourdesc(string)
++setb_TourGuideID(int)
++setb_TourGuideName(string)
++setb_TourArea(string)
++setbookername(string)
++setb_asTourist()
++Getb_TourID()
++Getb_TourName()
++Getb_TourDate()
++Getb_TourArea()
++Getb_TourLocation()
++Getb_currentparti()
++getb_partinum()
++Getb_tourdesc()
++Getb_TourGuideID()
++Getb_TourGuideName()
++get_TourArea()
++getbookername()
++getAsTourist()
++getb_userID()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>0</y>
+      <w>168</w>
+      <h>640</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;User&gt;&gt;
+--
+- userID int
+- rating_count int
+- rating int
+- avgRating int
+- username string
+- fname string
+-lname string
+- email string
+- address string
+-cNum string
+- area string
+- isTourist string
+- isGuide string
+- isAdmin string
+- isSuspended string
+- dob DateTime
++setUserID(int)
++setRating9int)
++setRating_count(int)
++setAvgRating(int)
++setUsername(string)
++setFname(string)
++setLname(string)
++setEmail(string)
++setAddress(string)
++setArea(string)
++setCNum(string)
++setIsTourist(string)
++setIsGuide(string)
++setIsSuspended(string)
++setIsAdmin(string)
++setDOB(DateTime)
++getUserID()
++getRating()
++getRating_count()
++getAvgRating()
++getUsername()
++getFname()
++getLname()
++getEmail()
++getAddress()
++getArea()
++getCNum()
++getIsTourist()
++getIsGuide()
++getIsAdmin()
++getIsSuspended()
++getDOB</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>104</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+Register &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>848</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+view &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1360</x>
+      <y>528</y>
+      <w>56</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+view &gt;</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>256</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*
+&lt; Login </panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>440</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+&lt; Able to</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1088</x>
+      <y>72</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;EditProfile&gt;&gt;
+--
+#Page_Load()
+#EditProf_Submit_Click()
++UpdateProf()
+#EditBack_Click()
+#updateRole_TextChanged()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>72</y>
+      <w>136</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ProfilePage&gt;&gt;
+--
+#Page_Load()
+#ProfileBack_btn_Click()
+#EditProfile_btn_Click()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>136</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+access &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>976</x>
+      <y>136</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+includes &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>592</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; access</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>360</y>
+      <w>184</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+access &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0;200.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>848</x>
+      <y>360</y>
+      <w>480</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Makes &gt;
+lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>580.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>632</y>
+      <w>200</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+view &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;230.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>632</y>
+      <w>208</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+view &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;330.0;240.0;330.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,57 @@
+﻿D:\Windows Applications\Visual Studio\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Assignment 1.vcxproj, DemoCode.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  A2.cpp
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(355): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(357): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(359): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(365): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(368): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(401): warning C4018: '<': signed/unsigned mismatch
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(415): warning C4018: '<': signed/unsigned mismatch
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(435): warning C4018: '<': signed/unsigned mismatch
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1111): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1276): warning C4305: '+=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1277): warning C4305: '+=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1298): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1299): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1320): warning C4305: '+=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1321): warning C4305: '+=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1347): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1348): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1480): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\school\assignments\@ graphics interaction @\assignment 2\democode\a2.cpp(1488): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\School\Assignments\@ Graphics Interaction @\Assignment 2\Debug\vc120.pdb'; linking object as if no debug info
+  DemoCode.vcxproj -> D:\School\Assignments\@ Graphics Interaction @\Assignment 2\Debug\Assignment 2.exe

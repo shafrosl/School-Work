@@ -1,0 +1,20 @@
+CONTROLS
+1 - Front View
+2 - Top Down View
+0 - Resets poisition of cameras
+
+W - move camera forward
+S - move camera backwards
+A - move camera left
+D - move camera right
+
+R - randomize planet movement, rings, speed
+P - stops/resumes movement
+
+Right Click and Drag to rotate camera
+
+Esc - exit
+
+work done by:
+Mohamed Shafiq Bin Roslan
+6098253
